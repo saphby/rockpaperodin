@@ -1,4 +1,4 @@
-let ranNum = Math.random()
+const ranNum = Math.random()
 function getComputerChoice() {    
     if (ranNum < 1/3) {        
         return "Rock"
@@ -8,6 +8,9 @@ function getComputerChoice() {
         return "Scissors"
     }    
 } 
-console.log(ranNum)
-console.log(getComputerChoice())
+
+
+function getHumanChoice() {
+    return prompt(`Rock, Paper, or Scissors?`)
+}
 
